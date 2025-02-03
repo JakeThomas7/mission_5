@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/videos_mission_5.props" />
+</Project>

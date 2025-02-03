@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Trails With Jake</title>
+    <link rel="icon" type="image/png" href="~/mountain.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/videos_mission_5.styles.css" asp-append-version="true"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <a href="/" class="logo">
+            <span><i class="fa-solid fa-mountain"></i> Trails With Jake</span>
+        </a>
+        <nav class="nav">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/Home/Join" class="nav-link">Join Now</a>
+            <a href="/Home/Join" class="nav-link button button-primary">Personal Training</a>
+        </nav>
+    </div>
+</header>
+
+<div>
+    <main role="main">
+        @RenderBody()
+    </main>
+</div>
+
+<div class="copyright">
+    <div class="container">
+        <p>Website built by Jake Thomas | (682)-402-5305 | jothomas713@gmail.com</p>
+        <p>© 2024 Trails With Jake. All rights reserved.</p>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
